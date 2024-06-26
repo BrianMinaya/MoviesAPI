@@ -10,5 +10,5 @@
             ]
         }
     },
-    "postCreateCommand": "pip install boto3"
+    "postCreateCommand": "python -m venv venv && source venv/bin/activate && pip install -r requirements.txt"
 }

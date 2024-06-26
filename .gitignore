@@ -1,0 +1,6 @@
+# Virtual Environment Directory
+venv/
+
+# Log & Environment Ignore
+.env
+.log

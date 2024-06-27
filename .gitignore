@@ -4,3 +4,9 @@ venv/
 # Log & Environment Ignore
 .env
 .log
+/aws
+/.terraform
+terraform.tfstate
+terraform.tfstate.backup
+LICENSE.txt
+.terraform.lock.hcl

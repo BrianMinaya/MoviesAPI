@@ -10,3 +10,4 @@ terraform.tfstate
 terraform.tfstate.backup
 LICENSE.txt
 .terraform.lock.hcl
+movies.csv

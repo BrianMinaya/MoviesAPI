@@ -70,3 +70,17 @@ resource "aws_s3_object" "movie_covers_placeholder" {
 output "s3_bucket_name" {
   value = aws_s3_bucket.movie_data.bucket
 }
+
+# Include other Terraform files
+module "lambda" {
+  source = "./lambda"
+}
+
+module "api_gateway" {
+  source = "./api_gateway"
+  lambda_function_arn = module.lambda.lambda_function_arn
+}
+
+module "secrets_manager" {
+  source = "./secrets_manager"
+}
